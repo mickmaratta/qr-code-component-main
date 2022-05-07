@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --neut-white: hsl(0, 0%, 100%);
+    --lt-grey: hsl(212, 45%, 89%);
+    --grey-blue: hsl(220, 15%, 55%);
+    --dk-blue: hsl(218, 44%, 22%);
+}
+
+/*--- GLOBAL STYLES ---*/
+html { 
+    font-size: 62.5%;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--lt-grey);
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+h1 {
+    font-size: 2.2rem;
+    color: var(--dk-blue)
+}
+
+p {
+    font-size: 1.5rem;
+    color: var(--grey-blue);
+}
+/*--- CARD STYLES ---*/
+.card {
+    background-color: var(--neut-white);
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 1.5rem;
+}
+
+.card img {
+    height: 100%;
+    width: auto;
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 376px) {
+    .card {width: 23vw;}
+}
+/*--- ATTRIBUTION ---*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
